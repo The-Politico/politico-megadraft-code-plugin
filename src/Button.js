@@ -21,7 +21,8 @@ export default class Button extends Component {
     const data = {
       type: constants.PLUGIN_TYPE,
       code: "<!-- Your code here -->",
-      key: DraftJS.genKey()
+      key: DraftJS.genKey(),
+      display: "html"
     };
 
     this.props.onChange(insertDataBlock(this.props.editorState, data));
